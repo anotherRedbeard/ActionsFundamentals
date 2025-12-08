@@ -1,6 +1,6 @@
 # Cheat Sheet
 
-This document contains an overview of fundamental concepts and terminology, you can use this as a reference book if you get lost in the terminology along the way.
+This document contains an overview of fundamental concepts and terminology, you can use this as a reference book if you get lost in the terminology along the way. Change1
 
 ## Github actions high level components
 
