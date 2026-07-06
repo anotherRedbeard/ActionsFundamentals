@@ -12,11 +12,12 @@ on:
 
 jobs:
   Build:
+    name: Build the Code
     runs-on: ubuntu-latest
     steps:
       - run: |
-        echo "🎉 The job was triggered by event: ${{ github.event_name }}"
-        echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+          echo "🎉 The job was triggered by event: ${{ github.event_name }}"
+          echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
 
       - uses: actions/checkout@v4
 
