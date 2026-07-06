@@ -1,7 +1,11 @@
 name: GitHub Actions Demo
 
-run-name: ${{ github.actor }} is learning GitHub Actions
-
+run-name: >
+  GitHub Actions Demo | 
+  Deploy:${{ inputs.environment }}
+  | Branch:${{ github.ref_name }}
+  | Build:${{ github.run_number }}
+  | Commit:${{ github.sha }}
 on:
   push:
     branches: [ main ]
