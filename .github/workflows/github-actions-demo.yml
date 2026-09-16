@@ -33,7 +33,7 @@ jobs:
     needs: Build
     environment: Test
     steps:
-      - run: echo "🧪 Testing..."
+      - run: echo "🧪 Testing...env: ${{ vars.VARIABLE_1 }}"
 
   Load-Test:
     runs-on: ubuntu-latest
@@ -42,7 +42,7 @@ jobs:
     environment: Load-Test
     steps:
       - run: |
-          echo "🧪 Testing..."
+          echo "🧪 Testing...env: ${{ vars.VARIABLE_1 }}"
           sleep 15
 
   Production:
@@ -54,7 +54,7 @@ jobs:
     if: github.event.inputs.environment == 'Production'
     steps:
       - run: |
-          echo "🚀 Step 1..."
+          echo "🚀 Step 1...env: ${{ vars.VARIABLE_1 }}"
           sleep 10
       - run: |
           echo "🚀 Step 2..."
