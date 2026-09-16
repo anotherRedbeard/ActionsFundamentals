@@ -15,7 +15,7 @@ jobs:
 
       - name: Run my own container action
         id: hello-action
-        uses: anotherRedbeard/hello-world-docker-action-092026
+        uses: anotherRedbeard/hello-world-docker-action-092026@v1.0.0
         with:
           who-to-greet: '@anotherRedbeard'
 
