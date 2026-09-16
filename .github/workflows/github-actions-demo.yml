@@ -33,7 +33,9 @@ jobs:
     needs: Build
     environment: Test
     steps:
-      - run: echo "🧪 Testing...env: ${{ vars.VARIABLE_1 }}"
+      - run: |
+          echo "🧪 Testing..."
+          echo ${{ vars.VARIABLE_1 }}
 
   Load-Test:
     runs-on: ubuntu-latest
